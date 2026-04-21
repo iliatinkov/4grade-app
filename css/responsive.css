@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 900px) {
+  .container {
+    padding: 15px;
+  }
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: white;
+  }
+  .container {
+    background-color: #1e1e1e;
+  }
+}
